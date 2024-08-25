@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+</head>
+<body>
+    <!-- Property are objects values -->
+    <!-- properties are key:value Pair -->
+    <!-- key(Property name) always string
+        value(Property values) -> datatype, strings, numbers, arrays, functions, and other objects.        -->
+
+    <script>
+        var student={  //object
+            <!-- Properties -->
+            name:"yash",
+            age:21,
+            year: "TY"
+        };
+
+        var student2 = new Object();
+        student2.name = "Yash";
+        student2.age = 21;
+
+        document.write(student.name +" "+student.age+" "+student.year); 
+        document.write("2nd Object");
+        document.write(student2.name); 
+
+/*        //Accessing the objects another way
+        var student3=new Object();
+        student3.id = 101;
+        student3.phone = 1234567890;
+        document.write(student["id" + "phone"]);
+
+*/
+
+
+    </script>
+</body>
+</html>
