@@ -71,8 +71,59 @@
 
         //Bitwise &,|,~(not), ^(XOR), <<(Left Shift), >>(Right Shift)
         document.write("Bitwise Operator"+"<br>");
-        
     </script>
+
+    <!-- Conditional Statements -->
+     <script>
+        var Age = 21;
+        if(Age >= 18){
+            document.write("Eligible to Vote !!!!" + "<br>");
+        }
+        document.write("This will print atlest once" + "<br>");
+
+        //if-else (for person is indian or not) 
+        var person = "India";
+        if("Indian"){
+            document.write("Person Is Indian "+ "<br>");
+        } else{ document.write("Person Is NRI"+ "<br>");}
+
+        //If-Else-If (greates of three number)
+        var num1 = 10, num2 = 200, num3 = 30;
+        if(num1 > num2 && num1 > num3) {
+        document.write("num1 is greater"+ "<br>"); }
+        else if (num2 > num3){
+            document.write("num2 is greater"+ "<br>");
+        } else { 
+            document.write("Num3 is greater"+ "<br>");
+         }
+
+         //Nested - If else (number is positive or negative or 0 )
+        var num_is = -2;
+        if(num_is == 0){
+            document.write("the number is 0");
+        }else{
+            if(num_is > 0){
+                document.write("The number is positive");
+            } else{
+                document.write("The number is negative");
+            }   
+        }
+     </script>
+
+     <!-- Switch Case -->
+      <script>
+        var day = "Monday";
+        switch(day){
+            case 0: document.write("Monday");
+            break;
+
+            case 1: document.write("Wednesday");
+            break;
+
+            default: 
+            document.write("Days in a weak");
+        }
+      </script>
 
 </body>
 </html>
