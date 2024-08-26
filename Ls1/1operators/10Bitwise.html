@@ -6,30 +6,72 @@
     <title>Bitwise</title>
 </head>
 <body>
+    <!-- Bitwise operator works on bits
+     Bitwise operator work on 32 bits numbers
+     steps to solve S-1} decimal to binary, S-2} solve it in binary, S-3} convert that result into decimal from binary and print the result
+     isme jis bhi number pr hum kam krenge uska hame bitwise num nikalna hoga
+     like 5 ka binary 0101 or 1 ka 0001 -->
+     
+     <!-- it works like this 
+        5 binary = 0101 & 1 binary = 0001  
+        like for & operator dono bit same hone chahiye toh value true hoga
+        Ex:1}
+                    0101
+                  & 0001
+                --------------
+                    0001
+
+        Ex:2}    this is for or operator in which one value should be true 
+                   0101
+                |  0001
+                --------------
+                    0101
+
+        Ex:3} ~ not operator means 0 ka 1 hoga and 1 ka 0 hoga.
+                  ~   0101
+                   
+                --------------
+                    0010
+                    OR
+                ~   0001
+                --------------
+                    1110
+
+        Ex:4} XoR - isme kya hota h, agar dono bit change h means ek 0 or ek 1 h toh vo on hoga means 1.
+                5 ^ 1
+            0101    0001
+
+                    0101
+                 ^  0001
+                 --------------
+                    0100
+
+
+
+     -->
     <!-- 
         & And 
         | Or
         ~ Not
-        ^ Xor
+        ^ Xor - full form is exclusive or
         << left shift
         >> Right shift
      -->
 
-
-     0000	0	
-0001	1
-0010	2
-0011	3
-0100	4
-0101	5
-0110	6
-0111	7
-1001	8
-1010	9
-1011	10
-10000	11
+<!-- 
+     0000 - 0
+     0001 - 1
+     0010 - 2
+     0011 - 3 
+     0100 - 4
+     0101 - 5
+     0110 - 6
+     0111 - 7
+     1000 - 8
+     1001 - 9
+     1010 - 10 -->
     <script>
-
+        document.write("AND = ", (x= 5 & 1));
     </script>
-</body>
+</body> 
 </html>

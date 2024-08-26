@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All concepts code is available here</title>
+</head>
+<body>
+    <!-- object creation and property declaration-->
+     <script>
+        document.write("object creation and property declaration -> ");
+        var student = {
+            name : "yash",
+        };
+        document.write("<br>"+student.name);
+     </script>
+
+     <!-- Method 
+    set of instruction performed by object when it receives a msg. like click button which sends data over server 
+    EX:- employee               -->
+    <script>
+        var employee={
+            emp_id : 101,
+            name : "y",
+            position : "dev",
+            display: function()
+            {
+                return this.emp_id+" "+this.name+" "+this.position;
+            }
+        };
+
+        document.write(employee.display());
+    </script>
+
+
+    <!-- Operators -->
+
+    <script>
+        var x = 20, y = 10, z;
+
+        //Arithmetic (+,-,*,/,%,++,--)
+        document.write("Arithmetic Operator");
+        z = x + y;
+        document.write("<br>"+"add : x +y = "+z+"<br>");
+
+        //Comparision ( ==, ===, !=, >, <, >=, <= )
+        document.write("Comparision Operator ==, ===, !=, >, <, >=, <="+"<br>");
+        z = x >= y;
+        document.write(z+"<br>"); //boolean    
+        
+        //Logical ( &&, ||, ~ not )
+        document.write("Logical Operator"+"<br>");
+        document.write(x && y+"<br>");
+
+        //Assignment ( ==,+=,-=,*=,/=,%= )
+        document.write("Assignment Operator"+"<br>");
+        assn = x+=y;
+        document.write(assn+"<br>");
+
+
+        //Ternary <condition> ? <value1> : <value2>;
+        document.write("Ternary Operator"+"<br>");
+        var a = 10, b = 5;
+        var c = (a>b ? a:b);
+        document.write(c+"<br>");
+
+        //or eligible for vote or not eligible
+        var age = 19;
+        var eligiblity = (age >= 18) ? ("Eligible") : ("Not Eligible");
+        document.write(eligiblity+"<br>");
+
+        //Bitwise &,|,~(not), ^(XOR), <<(Left Shift), >>(Right Shift)
+        document.write("Bitwise Operator"+"<br>");
+        
+    </script>
+
+</body>
+</html>
