@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break</title>
+</head>
+<body>
+    <!-- Continue means skip 
+        And 
+    Break means stop -->
+
+    <!-- Continue statement terminates execution of the statements in current loop and Continues execution of the loop with the next iteration -->
+    <!-- Break statement stops the execution of a loop entirely -->
+     <script>
+        //Continue 
+        //in this will continue(skip the num 5 and 6 and print the rest of the number)
+        document.write("Continue statement <br>");
+        var i = 0;
+        while(i < 10){
+            if(i == 5 || i == 6){
+                i++;
+                continue;
+            }
+            document.write(i+"<br>");
+            i++;
+        }
+     </script>
+
+     <script>
+        //break
+        document.write("Break Statement <br>");
+        var x=0;
+        while(x<10){
+            x++;
+            if(x==5){
+                break;
+            }
+            document.write(x+"<br>"); //here the loop will stop executing
+        }
+     </script>
+</body>
+</html>

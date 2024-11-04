@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>While-Loop</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Syntax
     while(condition){
         lines of code to be executed
     } 
     -->
 
+    <!-- While Loop
+    When to use: When you want to repeat a block of code until a specific condition becomes false, but you don't necessarily know how many iterations you'll need.
+    How to use:
+    The condition is checked before each iteration.
+    The loop will run as long as the condition is true.
+    Example: Looping until user input is valid.
+    ex Code:-                    -->
+    <!-- <script>
+        let userInput = '';
+        while (userInput !== 'stop') {
+        userInput = prompt('Enter text, type "stop" to end:');
+        }
+    </script> -->
+
     <script>
-        
+      var count = 5;
+      while (count < 12) {
+        document.write(count + "<br>");
+        count++;
+      }
     </script>
-</body>
+
+    <!-- while loop that prints the numbers from 1 to 10. -->
+    <script>
+      document.write("while loop that prints the numbers from 1 to 10.<br>");
+      var num = 1;
+      while (num <= 10) {
+        document.write(num + "<br>");
+        num++;
+      }
+    </script>
+
+    <!-- while loop to find the sum of numbers from 1 to 100 -->
+    <script>
+      document.write(
+        "while loop to find the sum of numbers from 1 to 100 <br>"
+      );
+      let i = 1;
+      let sum = 0;
+
+      while (i <= 100) {
+        sum += i;
+        i++;
+      }
+      document.write("Sum: " + sum+"<br>");
+    </script>
+
+    <!-- while loop that prints the even numbers between 1 and 20. -->
+     <script>
+        document.write("while loop that prints the even numbers between 1 and 20.<br>");
+        var se=0;
+        while(se<20){
+            if(se % 2 == 0)
+            document.write(se+"<br>");
+            se++;
+        }
+     </script>
+  </body>
 </html>
